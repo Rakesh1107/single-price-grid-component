@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+	--light-gray: hsl(204, 43%, 93%);
+	--grayish-blue: hsl(218, 22%, 67%);
+	--cyan: hsl(179, 62%, 43%);
+	--bright-yellow: hsl(71, 73%, 54%);
+}
+
+body {
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+	font-size: 1rem;
+	background-color: var(--light-gray);
+}
+
+.container {
+	display: block;
+	height: 300px;
+	width: 75%;
+	margin: 100px auto;
+	border-radius: 20px;
+}
+
+.top {
+	border-radius: 5px 5px 0 0;
+	background-color: #fff;
+	padding: 20px;
+}
+
+.top .desc {
+	color: rgba(0, 0, 0, 0.5);
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+.title {
+	color: var(--cyan);
+}
+
+.sub-title {
+	color: var(--bright-yellow);
+}
+
+.left {
+	background-color: hsl(179, 62%, 43%);
+	
+}
+
+.right {
+	background-color: hsl(179, 62%, 46%);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.left, .right {
+	padding: 20px;
+	color: #fff;
+}
+
+.right .desc {
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.9);
+	line-height: 1.5;
+	padding-right: 60px;
+}
+
+.price .dollar {
+	font-size: 2rem;
+}
+
+.price .per-month {
+	font-weight: 400;
+}
+
+.access {
+	color: rgba(255, 255, 255, 0.9);
+	font-weight: 400;
+}
+
+button {
+	padding: 16px 100px;
+	font-family: 'Karla', sans-serif;
+	border-radius: 4px;
+	border: none;
+	background-color: var(--bright-yellow);
+	color: rgba(255, 255, 255, 1);
+	cursor: pointer;
+	font-weight: 700;
+}
+button:hover {
+	transition: 100ms ease-in;
+	filter: brightness(90%);
+}
+
+
+@media (min-width: 1440px) {
+	.left {
+		border-radius: 0 0 0 5px;
+	}
+	.right {
+		border-radius: 0 0 5px 0;
+	}
+	.container {
+		margin-top: 200px;
+		width: 40%;
+		padding: 30px;
+	}
+	.subscription {
+		display: flex;
+	}
+	.left {
+		width: 100%;
+	}
+	.right {
+		width: 100%;
+	}
+}
